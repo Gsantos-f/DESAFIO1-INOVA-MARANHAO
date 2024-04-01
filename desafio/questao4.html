@@ -11,20 +11,20 @@
 <script>
 
     let numeros = [23, 16, 11, 8, 19, 14, 5, 21]
-    let meusPrimos = []
+    let primos = []
     let composto = []
 
     for(let a = 0; a < numeros.length; a++){
         if((numeros[a]%2) != 0 && (numeros[a]%3) != 0){
-            meusPrimos.push(numeros[a])
+            primos.push(numeros[a])
         } else{
             composto.push(numeros[a])
         }
     }
 
     console.log(composto)
-    console.log(meusPrimos)
-    alert(`Estes são os numeros compostos: ${composto} e os numeros primos: ${meusPrimos}.`)
+    console.log(primos)
+    alert(`Estes são os numeros compostos: ${composto} e os numeros primos: ${primos}.`)
 
 </script>
 </html>
