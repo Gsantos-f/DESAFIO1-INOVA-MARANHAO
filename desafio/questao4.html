@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let numeros = [23, 16, 11, 8, 19, 14, 5, 21]
+    let meusPrimos = []
+    let composto = []
+
+    for(let a = 0; a < numeros.length; a++){
+        if((numeros[a]%2) != 0 && (numeros[a]%3) != 0){
+            meusPrimos.push(numeros[a])
+        } else{
+            composto.push(numeros[a])
+        }
+    }
+
+    console.log(composto)
+    console.log(meusPrimos)
+    alert(`Estes são os numeros compostos: ${composto} e os numeros primos: ${meusPrimos}.`)
+
+</script>
+</html>

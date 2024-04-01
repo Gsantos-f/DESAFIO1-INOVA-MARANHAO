@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let qtdNotas = prompt("Escreva a quantidade de notas que deseja tirar a media!");
+
+    let notas = 0;
+    let resultado = 0;
+
+    for(let i = 1; i <= qtdNotas; i++){
+        notas = prompt(`Digite sua ${i}° nota!`);
+        resultado = resultado + parseFloat(notas)
+    }
+
+    resultado = (resultado/qtdNotas)
+    alert("Sua media é: " + resultado.toFixed(2))
+    
+</script>
+</html>

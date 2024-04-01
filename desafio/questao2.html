@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let numeros = []
+    let push = ""
+
+    let qtdNumeros = prompt("Qual a quantidade de numeros?")
+
+    for(let a = 1; a <= qtdNumeros; a++){
+        push = prompt(`Qual o ${a}° numero?`)
+        numeros.push(push)
+    }
+
+    // Ordernar do menor para o maior
+    numeros.sort(function (a, b) {
+        return a - b;
+    });
+
+    alert(`A ordem dos numeros do menor para o maior é: ${numeros}, Sendo o menor numero: ${numeros[0]} e o maior: ${numeros[numeros.length -1]}`)
+
+</script>
+</html>

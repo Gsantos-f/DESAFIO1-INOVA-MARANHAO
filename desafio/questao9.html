@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    alert("Bem vindo ao jogo de RPG, você tem um total de 100 de HP inicial e perde 20 de HP a cada ataque levado.")
+
+    // Em jogos os "hits" são sucessos em acerto de ataques/golpe
+
+    let HP = 100
+    let hits = prompt("Quantos ataques o jogador levou?")
+    HP = HP - (hits * 20)
+
+    alert(`A vida restante do jogador é de ${HP}HP.`)
+
+</script>
+</html>

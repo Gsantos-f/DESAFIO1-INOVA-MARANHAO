@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Abrir o console do navegador.
+</body>
+
+<script>
+
+    // Texto utilizado para ver a quantidade de caracteres em caixa alta. 
+
+    let text = "LoReM IpSuM Is sImPlY DuMmY TeXt oF ThE PrInTiNg aNd tYpEsEtTiNg iNdUsTrY"
+    let upper = 0
+    let lower = 0
+
+    // Loop para buscar se o caractere é maiúsculo ou minúsculo.
+    for(let i = 0; i < text.length; i++){
+        if(text[i] >= 'A' && text[i] <= 'Z'){
+            upper++
+        } else if(text[i] >= 'a' && text[i] <= 'z'){
+            lower++
+        }
+    }
+    
+    console.log("Quantidade de caracteres em maiúsculo: " + upper)
+    console.log("Quantidade de caracteres em minúsculo: " + lower)
+
+</script>
+</html>

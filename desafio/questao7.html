@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+<script>
+
+    // Valor de cada item R$ 2,50, R$ 3,75 e R$ 1,99
+
+    let valorTotal = 0
+    let valorProd = 0
+    let continuar = "1"
+
+    while( continuar == "1"){
+        // Loop para adicionar produtos a soma total
+
+        valorProd = prompt("Qual o preço do produto?")
+        valorTotal = valorTotal + parseFloat(valorProd)
+        continuar = prompt("Deseja adicionar mais um produto? ( 1 para 'sim' e 2 para 'não')")
+
+    }
+
+    alert(`O valor total da compra é de R$ ${valorTotal.toFixed(2)} reais.`)
+
+</script>
+</html>
